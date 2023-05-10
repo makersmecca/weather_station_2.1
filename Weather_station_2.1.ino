@@ -32,8 +32,8 @@ int count=0;
 
 /* NTP TIME CONSTANTS*/
 
-const char *ssid     = "The Den";
-const char *password = "this_is_a_scam";
+const char *ssid     = "ssid";
+const char *password = "password";
 const long utcOffsetInSeconds = 19800;
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP,"asia.pool.ntp.org",utcOffsetInSeconds);
@@ -47,7 +47,7 @@ int lpg, co, smoke;
 MQ2 mq2(pin);
 */
 /* Open Weather Constants */
-String openWeatherMapApiKey = "fca476e216674e4b517d418e204ba718"; //API key
+String openWeatherMapApiKey = "your API key"; //API key
 String city = "Kolkata";                                          //City
 String countryCode = "IN";                                        //Country code
 unsigned long lastTime = 0;                                       //dont change
